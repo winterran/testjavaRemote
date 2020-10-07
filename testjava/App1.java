@@ -1,6 +1,7 @@
-/*
- * ÊäÈë10Î»Ñ§ÉúµÄ³É¼¨£¬²¢ÇÒÅĞ¶ÏËûÃÇµÄ³É¼¨ÊÇÄÄ¸öµÇ¼Ç¡£ÆäÖĞ90-100·ÖÊÇA¼¶£¬80-90·ÖÊÇB¼¶£¬
- * 70-79·ÖÊÇC¼¶£¬60-69·ÖÊÇD¼¶£¬60·ÖÒÔÏÂÊÇF¼¶¡£
+ï»¿/*
+ * è¾“å…¥10ä½å­¦ç”Ÿçš„æˆç»©ï¼Œå¹¶ä¸”åˆ¤æ–­ä»–ä»¬çš„æˆç»©æ˜¯å“ªä¸ªç™»è®°ã€‚å…¶ä¸­90-100åˆ†æ˜¯Açº§ï¼Œ80-90åˆ†æ˜¯Bçº§ï¼Œ
+ * 70-79åˆ†æ˜¯Cçº§ï¼Œ60-69åˆ†æ˜¯Dçº§ï¼Œ60åˆ†ä»¥ä¸‹æ˜¯Fçº§ã€‚
+ *20201007è¿›è¡Œä¸€æ¬¡ä¿®æ”¹ï¼Œæµ‹è¯•ç”¨
  */
 import java.util.Scanner;
 public class App1 {
@@ -10,21 +11,21 @@ public class App1 {
 		double[] scores =new double[10];
 		Scanner s = new Scanner(System.in);
 		for(int i = 0;i< 10;i++){
-			System.out.println("ÇëÊäÈëµÚ"+i+"Î»Ñ§ÉúµÄ³É¼¨£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬"+i+"ä½å­¦ç”Ÿçš„æˆç»©ï¼š");
 			scores[i]= s.nextDouble();
 	 	}
 		for(int j = 0;j<10;j++){
 			double temp = scores[j];
 			if(temp >= 90 && temp <=100){
-				System.out.println("µÚ"+ j + "Î»Ñ§ÉúµÄ³É¼¨µÈ¼¶ÊÇA");
+				System.out.println("ç¬¬"+ j + "ä½å­¦ç”Ÿçš„æˆç»©ç­‰çº§æ˜¯A");
 			}else if(temp >= 80 && temp <=90){
-				System.out.println("µÚ"+ j + "Î»Ñ§ÉúµÄ³É¼¨µÈ¼¶ÊÇB");
+				System.out.println("ç¬¬"+ j + "ä½å­¦ç”Ÿçš„æˆç»©ç­‰çº§æ˜¯B");
 			}else if(temp >= 70 && temp <=80){
-				System.out.println("µÚ"+ j + "Î»Ñ§ÉúµÄ³É¼¨µÈ¼¶ÊÇC");
+				System.out.println("ç¬¬"+ j + "ä½å­¦ç”Ÿçš„æˆç»©ç­‰çº§æ˜¯C");
 			}else if(temp >= 60 && temp <=70){
-				System.out.println("µÚ"+ j + "Î»Ñ§ÉúµÄ³É¼¨µÈ¼¶ÊÇD");
+				System.out.println("ç¬¬"+ j + "ä½å­¦ç”Ÿçš„æˆç»©ç­‰çº§æ˜¯D");
 			}else{
-				System.out.println("µÚ"+ j + "Î»Ñ§ÉúµÄ³É¼¨µÈ¼¶ÊÇE");
+				System.out.println("ç¬¬"+ j + "ä½å­¦ç”Ÿçš„æˆç»©ç­‰çº§æ˜¯E");
 			}
 		}
 
